@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moive api</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5cc5621ebc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <style>
+     
+     .box {
+    width: 200px;
+    height: 300px;
+  
+}
+
+.box:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+
+.back {
+
+  transform: rotateY(180deg);
+ 
+ 
+}
+    </style>
+  </head>
+  <body>
+    <div class="container grid grid-cols-4 gap-2">
+      <!-- ******************************************Navbar**************************************************** -->
+      <nav class="ms-10">
+        <h2 class="my-4"><span class="font-bold text-2xl animate-pulse">FilyZilla.com</span></h2>
+        <p class="text-gray-600 my-3">MENU</p>
+        <ol class="space-y-4 font-bold">
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-xxl fa-solid fa-house-user"></i>
+            Home
+          </li>
+
+          <li></li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-shield"></i>
+            Community
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-compass"></i>
+            Discovery
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-award"></i>
+            Award
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-user"></i>
+            Celebs
+          </li>
+        </ol>
+        <p class="text-gray-600 mt-5 mb-2">LIBRARY</p>
+        <ol class="space-y-4 font-bold">
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-clock"></i>
+            Recent
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-star"></i>
+            Top Rated
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-download"></i>
+            Downloaded
+          </li>
+        </ol>
+        <p class="text-gray-600 mt-5 mb-2">CATEGORY</p>
+        <ol class="space-y-4 font-bold">
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-ticket"></i>
+            TV - Show
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-video"></i>
+            Movie
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-regular fa-percent"></i>
+            Anime
+          </li>
+        </ol>
+        <p class="text-gray-600 mt-5 mb-2">GENERAL</p>
+        <ol class="space-y-4 font-bold">
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-gear"></i>
+            Settings
+          </li>
+          <li class="hover:text-red-600 space-x-1 text-grey-300">
+            <i class="fa fa-solid fa-power-off"></i>
+            Log Out
+          </li>
+        </ol>
+      </nav>
+<!-- ******************************************Navbar**************************************************** -->
+      <div class="col-span-2 my-2">
+        <ul class="flex space-x-6 my-3">
+          <li class="hover:text-red-600">
+            <a href="movies.html">Movie</a>
+          </li>
+          <li class="hover:text-red-600">
+            <a href="series.html">TV Show</a>
+          </li>
+          <li class="hover:text-red-600">
+            <a href="animation.html">Anime</a>
+          </li>
+        </ul>
+        <!-- ***************************************************Middle Section********************************** -->
+
+        <div class="animation-sec flex flex-wrap gap-4">
+
+
+        </div>
+
+        <!-- **************************************************************************************** -->
+
+
+      </div>
+<!-- ************************************************Third Section***************************************** -->
+      <div class="my-3 p-5 ">
+        <div class="bg-gray-100 rounded-3xl p-2  ml-4 mr-4">
+          <i class="p-1 fa fa-brands fa-searchengin"></i>
+          <input class="bg-gray-100 w-68 h-8 focus:outline-none " type="text" name="" id="" placeholder="Search">
+        </div>
+
+        <p class="text-gray-600 font-bold my-3">Popular Movies</p>
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+
+        <button class="bg-red-100 w-full h-14 text-red-600 font-bold rounded hover:bg-red-200">See More</button>
+        
+        
+       
+
+        <p class="text-gray-600 font-bold my-3">Watchlists</p>
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+        <div class="flex space-x-3 my-4">
+          <img class="w-20 h-18" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054" alt="">
+          <div>
+            <h3>Blade Runner</h3>
+            <p>Action, Horror</p>
+            <div>⭐⭐⭐</div>
+          </div>
+          <p>PG-13</p>
+        </div>
+
+        <button class="bg-red-100 w-full h-14 text-red-600 font-bold rounded hover:bg-red-200">See More</button>
+
+      </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

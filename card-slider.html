@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .body{
+            
+            
+            overflow: hidden;
+            width: 650px;
+            
+            
+        }
+       .ig{
+        width: 200px;
+        height: 200px;
+
+       }
+       .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            transition: all 0.5s;
+       }
+        
+    </style>
+    <script>
+        let pos = 220
+        function next(){
+            pos+=220
+            
+            document.querySelector(".container").style.position ="relative";
+            document.querySelector(".container").style.right = pos+"px"
+            
+        }
+        function back(){
+            if(pos!==0){
+
+                pos-=220
+                document.querySelector(".container").style.position ="relative";
+                document.querySelector(".container").style.right = pos+"px"
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <button onclick="next()"><</button>
+    <button onclick="back()">></button>
+    <div class="body">
+        <div class="container">
+
+            <div ><img class="ig" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig"  src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig"  src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig"  src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+            <div><img class="ig" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
